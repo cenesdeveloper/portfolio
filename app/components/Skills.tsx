@@ -2,27 +2,21 @@
 import Image from "next/image";
 
 const skills = [
-  { name: "Python", logo: "/logos/python.svg" },
-  { name: "Java", logo: "/logos/java.svg" },
-  { name: "JavaScript", logo: "/logos/javascript.svg" },
-  { name: "TypeScript", logo: "/logos/typescript.svg" },
-  { name: "React.js", logo: "/logos/react.svg" },
-  { name: "Node.js", logo: "/logos/nodejs.svg" },
-  { name: "Flask", logo: "/logos/flask.svg" },
-  { name: "Express.js", logo: "/logos/express.svg" },
-  { name: "Bootstrap", logo: "/logos/bootstrap.svg" },
-  { name: "Next.js", logo: "/logos/nextjs.svg" },
-  { name: "SQL", logo: "/logos/sql.svg" },
-  { name: "HTML", logo: "/logos/html.svg" },
-  { name: "CSS", logo: "/logos/css.svg" },
-  { name: "Git", logo: "/logos/git.svg" },
-  { name: "Docker", logo: "/logos/docker.svg" },
-  { name: "Jenkins", logo: "/logos/jenkins.svg" },
-  { name: "Firebase", logo: "/logos/firebase.svg" },
-  { name: "Postman", logo: "/logos/postman.svg" },
-  { name: "VS Code", logo: "/logos/vscode.svg" },
-  { name: "IntelliJ", logo: "/logos/intellij.svg" },
-  { name: "Jira", logo: "/logos/jira.svg" }
+  { name: "Python", logo: "/python.svg" },
+  { name: "Java", logo: "/java.svg" },
+  { name: "C", logo: "/c.svg" },
+  { name: "JavaScript", logo: "/javascript.svg" },
+  { name: "TypeScript", logo: "/typescript.svg" },
+  { name: "React.js", logo: "/react.svg" },
+  { name: "Node.js", logo: "/node.svg" },
+  { name: "Flask", logo: "/flask.svg" },
+  { name: "Express.js", logo: "/express.svg" },
+  { name: "Tailwind", logo: "/tailwindcss.svg" },
+  { name: "Next.js", logo: "/nextdotjs.svg" },
+  { name: "SQL", logo: "/sqlite.svg" },
+  { name: "Git", logo: "/git.svg" },
+  { name: "Docker", logo: "/docker.svg" },
+  { name: "Jenkins", logo: "/jenkins.svg" },
 ];
 
 export default function Skills() {
