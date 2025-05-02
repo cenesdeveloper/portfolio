@@ -13,7 +13,7 @@ const experiences: ExperienceItem[] = [
   {
     title: "Software Automation Analyst Intern @ RBC",
     desc: "Developed Selenium test scripts in Java. Used Jenkins and Perfecto.",
-    logo: "/rbc.png",
+    logo: "/RBC.png",
     details: `• Created 40+ Selenium test cases for RBC Direct Investing\n• Migrated tests to internal framework for 66% faster runs\n• Debugged failures using Jenkins logs and Perfecto device cloud`,
   },
   {
@@ -51,7 +51,7 @@ export default function Experience() {
               className="cursor-pointer h-[260px] flex flex-col justify-between p-6 rounded-2xl bg-[--card-bg] text-[--foreground] border border-gray-200 dark:border-gray-700 shadow-md hover:shadow-lg backdrop-blur-sm transition-all duration-300 hover:scale-[1.01]"
             >
               <div className="flex items-center gap-3 mb-4">
-                <Image src={exp.logo} alt={exp.title} width={40} height={40} className="rounded-md" />
+                <Image src={exp.logo} alt={exp.title} width={40} height={40} className="rounded-md" style={{ objectFit: "contain" }}/>
                 <h3 className="text-lg font-semibold">{exp.title}</h3>
               </div>
               <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">

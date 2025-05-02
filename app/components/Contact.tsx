@@ -41,16 +41,12 @@ export default function Contact() {
             className="p-3 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800"
           ></textarea>
 
-          <a
-            href="#"
-            onClick={(e) => {
-              e.preventDefault();
-              e.currentTarget.closest("form")?.requestSubmit();
-            }}
-            className="inline-block w-full md:w-auto px-6 py-3 bg-[--accent] text-white font-medium rounded-md text-center hover:opacity-90 transition"
+          <button
+            type="submit"
+            className="inline-block w-full md:w-auto px-6 py-3 bg-[--accent] text-[--foreground] font-medium rounded-md text-center hover:bg-[--foreground] hover:text-[--background] transition-all duration-300 hover:scale-105 hover:shadow-xl"
           >
             Send Message
-          </a>
+          </button>
         </form>
       </div>
 

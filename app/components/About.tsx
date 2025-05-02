@@ -13,7 +13,7 @@ export default function About() {
         <div className="flex-1 text-center md:text-left">
           <h1 className="text-4xl font-bold mb-4">Cemal Enes Durak</h1>
           <p className="text-lg text-gray-600 dark:text-gray-400 mb-6 max-w-xl">
-            Software Engineering Student · Backend & Automation Enthusiast. Passionate about building reliable tools and meaningful products with clean architecture and modern technologies.
+            3rd-Year Software Engineering Student @ McMaster University
           </p>
 
           <div className="flex justify-center md:justify-start gap-4 mb-6">
@@ -37,7 +37,7 @@ export default function About() {
 
           <a
             href="#contact"
-            className="inline-block px-6 py-2 bg-[--accent] text-white rounded-full font-medium hover:opacity-90 transition"
+            className="inline-block px-8 py-3 text-lg bg-[--accent] text-[--foreground] rounded-full font-semibold shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl focus:ring-4 focus:ring-[--accent]/50"
           >
             Contact Me
           </a>
