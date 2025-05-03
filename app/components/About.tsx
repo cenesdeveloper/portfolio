@@ -8,7 +8,7 @@ export default function About() {
       id="about"
       className="min-h-screen flex items-center px-6 py-20 bg-[--background] text-[--foreground]"
     >
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+      <div className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12">
         {/* Left: Info */}
         <div className="flex-1 text-center md:text-left">
           <h1 className="text-4xl font-bold mb-4">Cemal Enes Durak</h1>
