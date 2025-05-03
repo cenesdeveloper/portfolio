@@ -12,32 +12,37 @@ type ExperienceItem = {
 
 const experiences: ExperienceItem[] = [
   {
-    title: "Software Automation Analyst Intern @ RBC",
+    title: "Software Development Engineer In Test @ RBC",
     desc: "Java, Selenium, Jenkins, Perfecto",
     logo: "/rbc.png",
-    period: "Jan – Apr 2024",
-    details: `• Created 40+ Selenium test cases for RBC Direct Investing\n• Migrated tests to internal framework for 66% faster runs\n• Debugged failures using Jenkins logs and Perfecto device cloud`,
+    period: "Jan. 2025 – Sept. 2025",
+    details: `• Developed 30+ Java Selenium test scripts for RBC Direct Investing to ensure functionality of homepage and account opening, improving test coverage\n• Migrated homepage tests from Selenium to an internal framework, reducing test runtime by 80% and improving testing efficiency\n• Resolved errors across 250+ test cases in 7+ projects by configuring daily Jenkins jobs and analyzing results with Perfecto, increasing test pass rate by 75%`,
   },
   {
-    title: "AI Resume Matching Project",
-    desc: "Flask API, OpenAI, ChromaDB, Docker",
+    title: "Software Engineer Intern @ AIModels Tech Inc.",
+    desc: "Python, (LLMs), Flask, OpenAI, ChromaDB, Docker, Docker Compose, Embeddings",
     logo: "/aimodels.png",
-    period: "Mar – Apr 2024",
-    details: `• Extracted features from resumes using GPT-4\n• Stored embeddings in ChromaDB for vector search\n• Used Celery + Redis for async job matching`,
+    period: "Feb. 2025 – Apr. 2025",
+    details: `• Built a resume filtering API using OpenAI to extract candidate info, generate embeddings for semantic search, and store them in ChromaDB with Dockerized services\n• Designed a candidate-job matching algorithm using ChromaDB’s vector search to return top 5 matches per job, with Redis caching to improve response time.\n• Built Flask REST API endpoints to trigger asynchronous candidate-job matching tasks using Celery, and tested functionality with Postman`,
   },
   {
-    title: "Web Dev Intern @ A Round Entertainment",
-    desc: "React, Firebase, Git, daily standups",
+    title: "Software Engineer Intern @ A Round Entertainment",
+    desc: "Express.js, React.js, Node.js, Firebase, Git, CSS, JavaScript",
     logo: "/around.jpg",
-    period: "Sep – Dec 2023",
-    details: `• Designed desktop/mobile views for real estate app\n• Integrated Firebase Auth & Firestore\n• Attended daily standups, used Git for collaboration`,
+    period: "June 2024 – Sept. 2024",
+    details: `• Developed the sign-in, registration, profile, and real estate listing pages for a real estate application using React,
+ CSS, and JavaScript\n• Developed and integrated backend functionalities for a real estate platform using Node.js, Express.js, and
+ Firebase, creating API endpoints for the property listing page that allow users to submit property details\n• Stored property information and image URLs in Firebase Firestore and used concurrent file processing, reducing
+ server response time by 25%`,
   },
   {
     title: "Software Developer @ Google Developer Student Clubs McMaster University",
-    desc: "Flask, SQLite, Jinja, stock simulation",
+    desc: "Python, Flask, HTML, Figma, CSS",
     logo: "/gd.png",
-    period: "Dec 2023",
-    details: `• Implemented stock buy/sell and lookup\n• Used Jinja templates and Flask forms\n• Validated transactions and displayed history`,
+    period: "Sept. 2023 - Apr. 2024",
+    details: `• Developed a gamified learning platform using Python, Flask, JavaScript, and Bootstrap, featuring interactive
+modules, leaderboards, and achievement badges to enhance student engagement in technical subjects\n• Created RESTful API endpoints with Flask to access to learning modules and lesson data, ensuring reliable
+content retrieval for users`,
   },
 ];
 
@@ -92,7 +97,7 @@ export default function Experience() {
           onClick={() => setActiveItem(null)}
         >
           <div
-            className="bg-white dark:bg-gray-900 p-5 rounded-xl max-w-md w-full mx-4 shadow-lg min-h-[320px] max-h-[70vh] overflow-y-auto relative"
+            className="bg-white dark:bg-gray-900 p-8 rounded-xl max-w-2xl w-full mx-4 shadow-lg min-h-[400px] max-h-[85vh] overflow-y-auto relative"
             onClick={(e) => e.stopPropagation()}
           >
             <button
