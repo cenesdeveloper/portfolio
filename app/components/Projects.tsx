@@ -6,9 +6,9 @@ export default function Projects() {
       <div className="max-w-5xl mx-auto grid gap-6 md:grid-cols-2">
         <ProjectCard
           title="📚 Gamified Learning Platform"
-          desc="Built a Flask backend to match resumes to job descriptions using GPT-4 and ChromaDB. Dockerized for easy deployment."
+          desc="Designed an interactive web app to enhance student engagement through gamification. Features include educational modules with point-based rewards, leaderboards, achievement badges, and a reward redemption system to make learning more enjoyable and motivating"
           github="https://github.com/DSC-McMaster-U/Gamified-Learning-Platform"
-          skills={["Flask", "Python", "ChromaDB", "Docker"]}
+          skills={["Python", "Flask", "JavaScript", "HTML", "CSS"]}
         />
 
         <ProjectCard
@@ -21,14 +21,14 @@ export default function Projects() {
 
         <ProjectCard
           title="🕹️ Maze Solver"
-          desc="Implemented Tremaux, BFS, and Right-hand algorithms to solve mazes and compare pathfinding strategies."
+          desc="Implemented Tremaux, BFS, and Right-hand algorithms to solve mazes and compare pathfinding strategies"
           github="https://github.com/cenesdeveloper/Maze-Solver"
           skills={["Java", "OOP", "Algorithms"]}
         />
 
         <ProjectCard
           title="🔒 Password Strength Analyzer"
-          desc="A C program that analyzes password strength based on character types and length to help users build secure passwords."
+          desc="A C program that analyzes password strength based on character types and length to help users build secure passwords"
           github="https://github.com/cenesdeveloper/Password-Strength-Analyzer"
           skills={["C", "Security", "CLI"]}
         />
@@ -45,7 +45,7 @@ export default function Projects() {
           desc="Built a personal portfolio using Next.js and Tailwind CSS to showcase my projects, experience, and skills in a responsive layout."
           github="https://github.com/cenesdeveloper/portfolio"
           live="https://cenesdeveloper.vercel.app"
-          skills={["Next.js", "Tailwind CSS", "React"]}
+          skills={["TypeScript", "Next.js", "Tailwind CSS"]}
         />
       </div>
     </section>
