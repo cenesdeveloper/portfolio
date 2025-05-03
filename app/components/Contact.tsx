@@ -1,7 +1,43 @@
 "use client";
+
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 export default function Contact() {
+  const form = useRef<HTMLFormElement>(null);
+
+  const sendEmail = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    const formData = new FormData(form.current!);
+    const templateParams = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      subject: formData.get("subject"),
+      message: formData.get("message"),
+      time: new Date().toLocaleString(),
+    };
+
+    emailjs
+      .send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        templateParams,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+      )
+      .then(
+        () => {
+          alert("Message sent!");
+          form.current?.reset();
+        },
+        (error) => {
+          console.error("FAILED...", error);
+          alert("Failed to send message.");
+        }
+      );
+  };
+
   return (
     <section id="contact" className="px-6 py-32 bg-[--background] text-[--foreground]">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
@@ -14,11 +50,7 @@ export default function Contact() {
         </div>
 
         {/* Right: Contact form */}
-        <form
-          action="https://formspree.io/f/YOUR_FORM_ID"
-          method="POST"
-          className="flex flex-col gap-6"
-        >
+        <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-6">
           <input
             type="text"
             name="name"
@@ -30,6 +62,13 @@ export default function Contact() {
             type="email"
             name="email"
             placeholder="Your Email"
+            required
+            className="p-3 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800"
+          />
+          <input
+            type="text"
+            name="subject"
+            placeholder="Subject"
             required
             className="p-3 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800"
           />
