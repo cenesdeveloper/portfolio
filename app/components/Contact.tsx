@@ -41,12 +41,32 @@ export default function Contact() {
   return (
     <section id="contact" className="px-6 py-32 bg-[--background] text-[--foreground]">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-        {/* Left: Title only */}
+        {/* Left: Title and links */}
         <div>
           <h2 className="text-3xl font-bold mb-4">Contact</h2>
           <p className="text-gray-600 dark:text-gray-400 mb-4 max-w-md">
             Feel free to reach out for collaborations, questions, or opportunities. I’ll get back to you as soon as possible.
           </p>
+
+          {/* Icons */}
+          <div className="flex gap-6 mt-6">
+            <a
+              href="mailto:cenesdurak@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 dark:text-gray-300 hover:text-[--accent] transition"
+            >
+              <FaEnvelope size={30} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/cemalenesdurak/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 dark:text-gray-300 hover:text-[--accent] transition"
+            >
+              <FaLinkedin size={30} />
+            </a>
+          </div>
         </div>
 
         {/* Right: Contact form */}
