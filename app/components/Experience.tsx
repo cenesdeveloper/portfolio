@@ -17,7 +17,11 @@ const experiences: ExperienceItem[] = [
     desc: "Java, Selenium, Jenkins, Perfecto",
     logo: "/rbc.png",
     period: "Jan. 2025 – Sept. 2025",
-    details: `• Developed 30+ Java Selenium test scripts for RBC Direct Investing to ensure functionality of homepage and account opening, improving test coverage\n• Migrated homepage tests from Selenium to an internal framework, reducing test runtime by 80% and improving testing efficiency\n• Resolved errors across 250+ test cases in 7+ projects by configuring daily Jenkins jobs and analyzing results with Perfecto, increasing test pass rate by 75%`,
+    details: `• Developed 30+ Java Selenium test scripts for RBC Direct Investing to ensure functionality of homepage and account opening, improving test coverage
+
+• Migrated homepage tests from Selenium to an internal framework, reducing test runtime by 80% and improving testing efficiency
+
+• Resolved errors across 250+ test cases in 7+ projects by configuring daily Jenkins jobs and analyzing results with Perfecto, increasing test pass rate by 75%`,
     skills: ["Java", "Selenium", "Jenkins", "Perfecto"]
   },
   {
@@ -25,7 +29,11 @@ const experiences: ExperienceItem[] = [
     desc: "Python, (LLMs), Flask, OpenAI, ChromaDB, Docker, Docker Compose, Embeddings",
     logo: "/aimodels.png",
     period: "Feb. 2025 – Apr. 2025",
-    details: `• Built a resume filtering API using OpenAI to extract candidate info, generate embeddings for semantic search, and store them in ChromaDB with Dockerized services\n• Designed a candidate-job matching algorithm using ChromaDB’s vector search to return top 5 matches per job, with Redis caching to improve response time.\n• Built Flask REST API endpoints to trigger asynchronous candidate-job matching tasks using Celery, and tested functionality with Postman`,
+    details: `• Built a resume filtering API using OpenAI to extract candidate info, generate embeddings for semantic search, and store them in ChromaDB with Dockerized services
+
+• Designed a candidate-job matching algorithm using ChromaDB’s vector search to return top 5 matches per job, with Redis caching to improve response time.
+
+• Built Flask REST API endpoints to trigger asynchronous candidate-job matching tasks using Celery, and tested functionality with Postman`,
     skills: ["Python", "LLMs", "Flask", "OpenAI API", "ChromaDB", "Docker", "Docker Compose", "Redis", "Embeddings", "REST APIs"]
   },
   {
@@ -33,7 +41,11 @@ const experiences: ExperienceItem[] = [
     desc: "Express.js, React.js, Node.js, Firebase, Git, CSS, JavaScript",
     logo: "/around.jpg",
     period: "June 2024 – Sept. 2024",
-    details: `• Developed the sign-in, registration, profile, and real estate listing pages for a real estate application using React, CSS, and JavaScript\n• Developed and integrated backend functionalities for a real estate platform using Node.js, Express.js, and Firebase, creating API endpoints for the property listing page that allow users to submit property details\n• Stored property information and image URLs in Firebase Firestore and used concurrent file processing, reducing server response time by 25%`,
+    details: `• Developed the sign-in, registration, profile, and real estate listing pages for a real estate application using React, CSS, and JavaScript
+
+• Developed and integrated backend functionalities for a real estate platform using Node.js, Express.js, and Firebase, creating API endpoints for the property listing page that allow users to submit property details
+
+• Stored property information and image URLs in Firebase Firestore and used concurrent file processing, reducing server response time by 25%`,
     skills: ["React.js", "Node.js", "Express.js", "Firebase", "JavaScript", "CSS", "Git"]
   },
   {
@@ -41,7 +53,9 @@ const experiences: ExperienceItem[] = [
     desc: "Python, Flask, HTML, Figma, CSS",
     logo: "/gd.png",
     period: "Sept. 2023 - Apr. 2024",
-    details: `• Developed a gamified learning platform using Python, Flask, JavaScript, and Bootstrap, featuring interactive modules, leaderboards, and achievement badges to enhance student engagement in technical subjects\n• Created RESTful API endpoints with Flask to access to learning modules and lesson data, ensuring reliable content retrieval for users`,
+    details: `• Developed a gamified learning platform using Python, Flask, JavaScript, and Bootstrap, featuring interactive modules, leaderboards, and achievement badges to enhance student engagement in technical subjects
+
+• Created RESTful API endpoints with Flask to access to learning modules and lesson data, ensuring reliable content retrieval for users`,
     skills: ["Python", "Flask", "HTML", "CSS", "Figma"]
   }
 ];
@@ -63,7 +77,7 @@ export default function Experience() {
             className="mb-10 pl-6 relative cursor-pointer"
             onClick={() => setActiveItem(exp)}
           >
-            <span className="absolute -left-[9px] top-2 w-4 h-4 bg-black rounded-full border-2 border-black" />
+            <span className="absolute -left-[9px] top-0.5 w-4 h-4 bg-black rounded-full border-2 border-black" />
             <div className="p-4 rounded-lg bg-[--card-bg] border border-gray-200 dark:border-gray-700 shadow hover:shadow-md transition-all duration-300 flex flex-col gap-2">
               <div className="flex items-center gap-3">
                 <Image
@@ -82,7 +96,6 @@ export default function Experience() {
                   )}
                 </div>
               </div>
-              {/* Skill Tags */}
               <div className="flex flex-wrap gap-2 mt-2">
                 {exp.skills.map((skill) => (
                   <span
@@ -98,7 +111,6 @@ export default function Experience() {
         ))}
       </div>
 
-      {/* Modal */}
       {activeItem && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/50"
@@ -131,7 +143,7 @@ export default function Experience() {
               )}
             </div>
 
-            <div className="text-sm text-gray-700 dark:text-gray-300 whitespace-pre-wrap text-center">
+            <div className="text-sm text-gray-700 dark:text-gray-300 whitespace-pre-wrap text-left leading-relaxed">
               {activeItem.details}
             </div>
           </div>
