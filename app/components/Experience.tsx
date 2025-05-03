@@ -26,7 +26,7 @@ const experiences: ExperienceItem[] = [
     logo: "/aimodels.png",
     period: "Feb. 2025 – Apr. 2025",
     details: `• Built a resume filtering API using OpenAI to extract candidate info, generate embeddings for semantic search, and store them in ChromaDB with Dockerized services\n• Designed a candidate-job matching algorithm using ChromaDB’s vector search to return top 5 matches per job, with Redis caching to improve response time.\n• Built Flask REST API endpoints to trigger asynchronous candidate-job matching tasks using Celery, and tested functionality with Postman`,
-    skills: ["Python", "Flask", "OpenAI", "ChromaDB", "Docker", "Docker Compose", "Redis"]
+    skills: ["Python", "LLMs", "Flask", "OpenAI API", "ChromaDB", "Docker", "Docker Compose", "Redis", "Embeddings", "REST APIs"]
   },
   {
     title: "Software Engineer Intern @ A Round Entertainment",
