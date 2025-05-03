@@ -18,7 +18,7 @@ export default function About() {
 
           <div className="flex justify-center md:justify-start gap-4 mb-6">
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/cenesdeveloper"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 dark:text-gray-300 hover:text-[--accent] transition"
@@ -26,7 +26,7 @@ export default function About() {
               <FaGithub size={26} />
             </a>
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/cemalenesdurak/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 dark:text-gray-300 hover:text-[--accent] transition"

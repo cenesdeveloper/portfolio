@@ -54,13 +54,13 @@ export default function Contact() {
       <footer className="mt-24 border-t pt-6 text-center text-sm text-gray-600 dark:text-gray-400">
         <div className="flex justify-center gap-6 mb-2">
           <a
-            href="mailto:your.email@example.com"
+            href="mailto:cenesdurak@gmail.com"
             className="hover:text-[--accent]"
           >
             <FaEnvelope size={18} />
           </a>
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/cenesdeveloper"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-[--accent]"
@@ -68,7 +68,7 @@ export default function Contact() {
             <FaGithub size={18} />
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/cemalenesdurak/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-[--accent]"
