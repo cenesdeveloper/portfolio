@@ -67,7 +67,7 @@ function ProjectCard({
   skills: string[];
 }) {
   return (
-    <div className="p-6 border border-gray-300 dark:border-gray-700 rounded-xl bg-white dark:bg-gray-900 shadow transition hover:scale-[1.02] hover:shadow-md">
+    <div className="p-6 border border-gray-300 dark:border-gray-700 rounded-xl bg-white shadow transition hover:scale-[1.02] hover:shadow-md">
       <div className="flex items-center justify-between mb-2">
         <h3 className="text-xl font-semibold">{title}</h3>
         <div className="flex items-center gap-4">
@@ -107,7 +107,7 @@ function ProjectCard({
         {skills.map((skill) => (
           <span
             key={skill}
-            className="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100 rounded-full"
+            className="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-700 dark:text-gray-100 rounded-full"
           >
             {skill}
           </span>
