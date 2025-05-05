@@ -78,7 +78,7 @@ export default function Experience() {
             onClick={() => setActiveItem(exp)}
           >
             <span className="absolute -left-[9px] top-0.5 w-4 h-4 bg-black rounded-full border-2 border-black" />
-            <div className="p-4 rounded-lg bg-[--card-bg] border border-gray-200 dark:border-gray-700 shadow hover:shadow-md transition-all duration-300 flex flex-col gap-2">
+            <div className="p-4 rounded-lg bg-[--card-bg] border border-gray-300 shadow hover:shadow-md transition-all duration-300 flex flex-col gap-2">
               <div className="flex items-center gap-3">
                 <Image
                   src={exp.logo}
@@ -90,7 +90,7 @@ export default function Experience() {
                 <div className="flex flex-col overflow-hidden">
                   <h3 className="text-base font-semibold truncate">{exp.title}</h3>
                   {exp.period && (
-                    <p className="text-xs text-gray-500 dark:text-gray-400 truncate">
+                    <p className="text-xs text-[--foreground]/70 truncate">
                       {exp.period}
                     </p>
                   )}
@@ -100,7 +100,7 @@ export default function Experience() {
                 {exp.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100 rounded-full"
+                    className="text-xs px-2 py-1 bg-gray-100 text-[--foreground] rounded-full"
                   >
                     {skill}
                   </span>
@@ -117,12 +117,12 @@ export default function Experience() {
           onClick={() => setActiveItem(null)}
         >
           <div
-            className="bg-white dark:bg-gray-900 p-8 rounded-xl max-w-2xl w-full mx-4 shadow-lg min-h-[400px] max-h-[85vh] overflow-y-auto relative"
+            className="bg-white dark:bg-gray-900 text-[--foreground] p-8 rounded-xl max-w-2xl w-full mx-4 shadow-2xl ring-1 ring-black/10 min-h-[400px] max-h-[85vh] overflow-y-auto relative"
             onClick={(e) => e.stopPropagation()}
           >
             <button
               onClick={() => setActiveItem(null)}
-              className="absolute top-4 right-6 text-gray-500 hover:text-red-500 text-2xl font-bold"
+              className="absolute top-4 right-6 text-[--foreground]/70 hover:text-red-500 text-2xl font-bold"
             >
               ×
             </button>
@@ -137,13 +137,13 @@ export default function Experience() {
               />
               <h3 className="text-lg font-bold text-center">{activeItem.title}</h3>
               {activeItem.period && (
-                <span className="text-sm text-gray-500 dark:text-gray-400">
+                <span className="text-sm text-[--foreground]/70">
                   {activeItem.period}
                 </span>
               )}
             </div>
 
-            <div className="text-sm text-gray-700 dark:text-gray-300 whitespace-pre-wrap text-left leading-relaxed">
+            <div className="text-sm text-[--foreground] whitespace-pre-wrap text-left leading-relaxed">
               {activeItem.details}
             </div>
           </div>
