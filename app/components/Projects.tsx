@@ -67,7 +67,7 @@ function ProjectCard({
   skills: string[];
 }) {
   return (
-    <div className="p-6 border border-gray-300 dark:border-gray-700 rounded-xl bg-white shadow transition hover:scale-[1.02] hover:shadow-md">
+    <div className="p-6 border border-gray-300 rounded-xl bg-white text-gray-800 shadow transition hover:scale-[1.02] hover:shadow-md">
       <div className="flex items-center justify-between mb-2">
         <h3 className="text-xl font-semibold">{title}</h3>
         <div className="flex items-center gap-4">
@@ -75,7 +75,7 @@ function ProjectCard({
             href={github}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-500 hover:text-black dark:hover:text-white"
+            className="text-gray-500 hover:text-black"
             aria-label="GitHub link"
           >
             <svg
@@ -92,7 +92,7 @@ function ProjectCard({
               href={live}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-500 hover:text-green-600 dark:hover:text-green-400 text-2xl leading-none"
+              className="text-gray-500 hover:text-green-600 text-2xl leading-none"
               aria-label="Live demo"
             >
               🌐
@@ -100,14 +100,13 @@ function ProjectCard({
           )}
         </div>
       </div>
-      <p className="text-gray-600 dark:text-gray-400 text-sm">{desc}</p>
+      <p className="text-gray-700 text-sm">{desc}</p>
 
-      {/* Skills */}
       <div className="flex flex-wrap gap-2 mt-4">
         {skills.map((skill) => (
           <span
             key={skill}
-            className="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-700 dark:text-gray-100 rounded-full"
+            className="text-xs px-2 py-1 bg-gray-200 text-gray-800 rounded-full"
           >
             {skill}
           </span>
