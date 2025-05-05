@@ -117,12 +117,12 @@ export default function Experience() {
           onClick={() => setActiveItem(null)}
         >
           <div
-            className="bg-white dark:bg-gray-900 text-[--foreground] p-8 rounded-xl max-w-2xl w-full mx-4 shadow-2xl ring-1 ring-black/10 min-h-[400px] max-h-[85vh] overflow-y-auto relative"
+            className="bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-100 p-8 rounded-xl max-w-2xl w-full mx-4 shadow-2xl ring-1 ring-black/10 min-h-[400px] max-h-[85vh] overflow-y-auto relative"
             onClick={(e) => e.stopPropagation()}
           >
             <button
               onClick={() => setActiveItem(null)}
-              className="absolute top-4 right-6 text-[--foreground]/70 hover:text-red-500 text-2xl font-bold"
+              className="absolute top-4 right-6 text-gray-500 hover:text-red-500 text-2xl font-bold"
             >
               ×
             </button>
@@ -137,13 +137,13 @@ export default function Experience() {
               />
               <h3 className="text-lg font-bold text-center">{activeItem.title}</h3>
               {activeItem.period && (
-                <span className="text-sm text-[--foreground]/70">
+                <span className="text-sm text-gray-500 dark:text-gray-400">
                   {activeItem.period}
                 </span>
               )}
             </div>
 
-            <div className="text-sm text-[--foreground] whitespace-pre-wrap text-left leading-relaxed">
+            <div className="text-sm whitespace-pre-wrap text-left leading-relaxed font-sans">
               {activeItem.details}
             </div>
           </div>
