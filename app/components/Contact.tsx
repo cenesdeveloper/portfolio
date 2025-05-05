@@ -43,8 +43,8 @@ export default function Contact() {
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
         {/* Left: Title and links */}
         <div>
-          <h2 className="text-3xl font-bold mb-4">Contact</h2>
-          <p className="text-gray-600 dark:text-gray-400 mb-4 max-w-md">
+          <h2 className="text-3xl font-bold mb-4 text-gray-800">Contact</h2>
+          <p className="text-gray-700 mb-4 max-w-md">
             Feel free to reach out for collaborations, questions, or opportunities. I’ll get back to you as soon as possible.
           </p>
 
@@ -54,7 +54,7 @@ export default function Contact() {
               href="mailto:cenesdurak@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 dark:text-gray-300 hover:text-[--accent] transition"
+              className="text-gray-600 hover:text-[--accent] transition"
             >
               <FaEnvelope size={30} />
             </a>
@@ -62,7 +62,7 @@ export default function Contact() {
               href="https://www.linkedin.com/in/cemalenesdurak/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 dark:text-gray-300 hover:text-[--accent] transition"
+              className="text-gray-600 hover:text-[--accent] transition"
             >
               <FaLinkedin size={30} />
             </a>
@@ -76,28 +76,28 @@ export default function Contact() {
             name="name"
             placeholder="Your Name"
             required
-            className="p-3 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800"
+            className="p-3 rounded-md border border-gray-300 bg-white text-gray-800"
           />
           <input
             type="email"
             name="email"
             placeholder="Your Email"
             required
-            className="p-3 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800"
+            className="p-3 rounded-md border border-gray-300 bg-white text-gray-800"
           />
           <input
             type="text"
             name="subject"
             placeholder="Subject"
             required
-            className="p-3 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800"
+            className="p-3 rounded-md border border-gray-300 bg-white text-gray-800"
           />
           <textarea
             name="message"
             rows={5}
             placeholder="Your Message"
             required
-            className="p-3 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800"
+            className="p-3 rounded-md border border-gray-300 bg-white text-gray-800"
           ></textarea>
 
           <button
@@ -110,11 +110,11 @@ export default function Contact() {
       </div>
 
       {/* Footer */}
-      <footer className="mt-24 border-t pt-6 text-center text-sm text-gray-600 dark:text-gray-400">
+      <footer className="mt-24 border-t pt-6 text-center text-sm text-gray-600">
         <div className="flex justify-center gap-6 mb-2">
           <a
             href="mailto:cenesdurak@gmail.com"
-            className="hover:text-[--accent]"
+            className="text-gray-600 hover:text-[--accent]"
           >
             <FaEnvelope size={18} />
           </a>
@@ -122,7 +122,7 @@ export default function Contact() {
             href="https://github.com/cenesdeveloper"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-[--accent]"
+            className="text-gray-600 hover:text-[--accent]"
           >
             <FaGithub size={18} />
           </a>
@@ -130,7 +130,7 @@ export default function Contact() {
             href="https://www.linkedin.com/in/cemalenesdurak/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-[--accent]"
+            className="text-gray-600 hover:text-[--accent]"
           >
             <FaLinkedin size={18} />
           </a>
