@@ -117,7 +117,7 @@ export default function Experience() {
           onClick={() => setActiveItem(null)}
         >
           <div
-            className="bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-100 p-8 rounded-xl max-w-2xl w-full mx-4 shadow-2xl ring-1 ring-black/10 min-h-[400px] max-h-[85vh] overflow-y-auto relative"
+            className="bg-white text-gray-800 p-8 rounded-xl max-w-2xl w-full mx-4 shadow-2xl ring-1 ring-black/10 min-h-[400px] max-h-[85vh] overflow-y-auto relative"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -137,7 +137,7 @@ export default function Experience() {
               />
               <h3 className="text-lg font-bold text-center">{activeItem.title}</h3>
               {activeItem.period && (
-                <span className="text-sm text-gray-500 dark:text-gray-400">
+                <span className="text-sm text-gray-500">
                   {activeItem.period}
                 </span>
               )}
