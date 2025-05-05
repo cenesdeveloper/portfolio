@@ -12,7 +12,7 @@ export default function About() {
         {/* Left: Info */}
         <div className="flex-1 text-center md:text-left">
           <h1 className="text-4xl font-bold mb-4">Cemal Enes Durak</h1>
-          <p className="text-lg text-gray-600 dark:text-gray-400 mb-6 max-w-xl">
+          <p className="text-lg text-gray-700 mb-6 max-w-xl">
             3rd-Year Software Engineering Student @ McMaster University
           </p>
 
@@ -21,7 +21,7 @@ export default function About() {
               href="https://github.com/cenesdeveloper"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 dark:text-gray-300 hover:text-[--accent] transition"
+              className="text-gray-600 hover:text-[--accent] transition"
             >
               <FaGithub size={26} />
             </a>
@@ -29,7 +29,7 @@ export default function About() {
               href="https://www.linkedin.com/in/cemalenesdurak/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 dark:text-gray-300 hover:text-[--accent] transition"
+              className="text-gray-600 hover:text-[--accent] transition"
             >
               <FaLinkedin size={26} />
             </a>
