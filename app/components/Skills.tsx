@@ -27,9 +27,14 @@ export default function Skills() {
       <div className="max-w-5xl mx-auto grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-6 place-items-center">
         {skills.map(skill => (
           <div key={skill.name} className="flex flex-col items-center text-sm text-center">
-            <div className="w-12 h-12 relative mb-2">
-              <Image src={skill.logo} alt={skill.name} layout="fill" objectFit="contain" />
-            </div>
+            <Image
+              src={skill.logo}
+              alt={skill.name}
+              width={48}
+              height={48}
+              style={{ objectFit: "contain" }}
+              className="mb-2"
+            />
             <span>{skill.name}</span>
           </div>
         ))}

@@ -7,7 +7,7 @@ export default function Navbar() {
   const navItems = ['About', 'Skills', 'Experience', 'Projects', 'Contact'];
 
   return (
-    <nav className="w-full px-6 py-4 bg-white dark:bg-gray-900 shadow sticky top-0 z-50">
+    <nav className="w-full px-6 py-4 bg-white shadow sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Left: name (clickable) */}
         <a href="#about" className="text-lg font-bold text-[--foreground] hover:text-[--accent] transition">
