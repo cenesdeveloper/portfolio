@@ -78,7 +78,7 @@ export default function Experience() {
             onClick={() => setActiveItem(exp)}
           >
             <span className="absolute -left-[9px] top-0.5 w-4 h-4 bg-black rounded-full border-2 border-black" />
-            <div className="p-4 rounded-lg bg-[--card-bg] border border-gray-300 shadow hover:shadow-md transition-all duration-300 flex flex-col gap-2">
+            <div className="p-4 rounded-lg bg-[--card-bg] border border-gray-300 shadow hover:shadow-md transition-all duration-300 flex flex-col gap-2 relative">
               <div className="flex items-center gap-3">
                 <Image
                   src={exp.logo}
@@ -106,6 +106,9 @@ export default function Experience() {
                   </span>
                 ))}
               </div>
+              <span className="mt-2 inline-block text-sm text-[--foreground]/60 font-medium bg-[--foreground]/5 px-3 py-1 rounded-md w-max transition-colors hover:bg-[--foreground]/10">
+                Click to learn more
+              </span>
             </div>
           </div>
         ))}

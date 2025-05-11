@@ -15,7 +15,7 @@ export default function Projects() {
           title="🗺️ Map-based Photo Album App"
           desc="Developed a Next.js map-based photo album app where users can drop pins, upload photos, and share memories using Mapbox GL JS."
           github="https://github.com/cenesdeveloper/We"
-          live="https://map-photo-album.vercel.app"
+          live="https://we-seven-omega.vercel.app/"
           skills={["Next.js", "React", "TypeScript", "Mapbox"]}
         />
 
@@ -44,7 +44,7 @@ export default function Projects() {
           title="🌐 Personal Portfolio"
           desc="Built a personal portfolio using Next.js and Tailwind CSS to showcase my projects, experience, and skills in a responsive layout."
           github="https://github.com/cenesdeveloper/portfolio"
-          live="https://cenesdeveloper.vercel.app"
+          live="https://cemalenesdurakportfolio.vercel.app/"
           skills={["TypeScript", "Next.js", "Tailwind CSS"]}
         />
       </div>
