@@ -78,7 +78,7 @@ export default function Experience() {
             onClick={() => setActiveItem(exp)}
           >
             <span className="absolute -left-[9px] top-0.5 w-4 h-4 bg-black rounded-full border-2 border-black" />
-            <div className="p-4 rounded-lg bg-[--card-bg] border border-gray-300 shadow hover:shadow-md transition-all duration-300 flex flex-col gap-2 relative">
+            <div className="p-6 border border-gray-300 rounded-xl bg-white text-gray-800 shadow hover:scale-[1.02] hover:shadow-md transition-all duration-300">
               <div className="flex items-center gap-3">
                 <Image
                   src={exp.logo}
@@ -90,7 +90,7 @@ export default function Experience() {
                 <div className="flex flex-col overflow-hidden">
                   <h3 className="text-base font-semibold truncate">{exp.title}</h3>
                   {exp.period && (
-                    <p className="text-xs text-[--foreground]/70 truncate">
+                    <p className="text-xs text-gray-500 truncate">
                       {exp.period}
                     </p>
                   )}
@@ -100,15 +100,16 @@ export default function Experience() {
                 {exp.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="text-xs px-2 py-1 bg-gray-100 text-[--foreground] rounded-full"
+                    className="text-xs px-2 py-1 bg-gray-200 text-gray-800 rounded-full"
                   >
                     {skill}
                   </span>
                 ))}
               </div>
-              <span className="mt-2 inline-block text-sm text-[--foreground]/60 font-medium bg-[--foreground]/5 px-3 py-1 rounded-md w-max transition-colors hover:bg-[--foreground]/10">
+              <span className="mt-2 inline-block text-sm text-gray-800 font-medium bg-gray-100 px-3 py-1 rounded-md w-max transition-colors hover:bg-gray-200">
                 Click to learn more
               </span>
+
             </div>
           </div>
         ))}
@@ -116,11 +117,11 @@ export default function Experience() {
 
       {activeItem && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/50"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/30"
           onClick={() => setActiveItem(null)}
         >
           <div
-            className="bg-white text-gray-800 p-8 rounded-xl max-w-2xl w-full mx-4 shadow-2xl ring-1 ring-black/10 min-h-[400px] max-h-[85vh] overflow-y-auto relative"
+            className="bg-white text-gray-800 p-6 md:p-8 rounded-xl border border-gray-300 shadow hover:shadow-md max-w-2xl w-full mx-4 min-h-[400px] max-h-[85vh] overflow-y-auto relative"
             onClick={(e) => e.stopPropagation()}
           >
             <button
