@@ -19,14 +19,14 @@ const experiences: ExperienceItem[] = [
     period: "Jan. 2025 – Sept. 2025",
     details: `• Developed 30+ Java Selenium test scripts for RBC Direct Investing to ensure functionality of homepage and account opening, improving test coverage
 
-• Migrated homepage tests from Selenium to an internal framework, reducing test runtime by 80% and improving testing efficiency
+• Migrated 60+ test scripts from Selenium to an internal testing framework, reducing average test runtime by 80%, and configured automated Helios jobs to run testing scripts daily using GitHub Actions, resulting in faster feedback cycles and improved testing efficiency
 
-• Resolved errors across 250+ test cases in 7+ projects by configuring daily Jenkins jobs and analyzing results with Perfecto, increasing test pass rate by 75%`,
+• Identified, analyzed, and resolved errors across 250+ test cases, ensuring reliable execution of automated test scripts across 7+ projects by running Jenkins jobs and monitoring execution results through both Jenkins and Perfecto, resulting in a 75% increase in the number of passing test cases`,
     skills: ["Java", "Selenium", "Jenkins", "Perfecto"]
   },
   {
     title: "Software Engineer Intern @ AIModels Tech Inc.",
-    desc: "Python, (LLMs), Flask, OpenAI, ChromaDB, Docker, Docker Compose, Embeddings",
+    desc: "Python, (LLMs), Machine Learning, Flask, OpenAI, ChromaDB, Docker, Docker Compose, Embeddings",
     logo: "/aimodels.png",
     period: "Feb. 2025 – Apr. 2025",
     details: `• Built a resume filtering API using OpenAI to extract candidate info, generate embeddings for semantic search, and store them in ChromaDB with Dockerized services
