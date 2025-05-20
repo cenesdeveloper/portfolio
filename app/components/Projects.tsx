@@ -5,10 +5,11 @@ export default function Projects() {
       <h2 className="text-3xl font-bold text-center mb-12">Projects</h2>
       <div className="max-w-5xl mx-auto grid gap-6 md:grid-cols-2">
         <ProjectCard
-          title="📚 Gamified Learning Platform"
-          desc="Designed an interactive web app to enhance student engagement through gamification. Features include educational modules with point-based rewards, leaderboards, achievement badges, and a reward redemption system to make learning more enjoyable and motivating"
-          github="https://github.com/DSC-McMaster-U/Gamified-Learning-Platform"
-          skills={["Python", "Flask", "JavaScript", "HTML", "CSS"]}
+          title="🔍 Recipe Search Web App"
+          desc="A Flask-based web app that lets users search recipes using the Spoonacular API with dietary filters, view recipe details in modals, and save bookmarks. Features user authentication, an SQLite database via SQLAlchemy, and a responsive Bootstrap UI."
+          github="https://github.com/cenesdeveloper/Recipe_Finder"
+          live="https://recipy-finder.onrender.com"
+          skills={["Python", "Flask", "SQLite", "Bootstrap"]}
         />
 
         <ProjectCard
@@ -20,11 +21,18 @@ export default function Projects() {
         />
 
         <ProjectCard
-          title="🔍 Recipe Search Web App"
-          desc="A Flask-based web app that lets users search recipes using the Spoonacular API with dietary filters, view recipe details in modals, and save bookmarks. Features user authentication, an SQLite database via SQLAlchemy, and a responsive Bootstrap UI."
-          github="https://github.com/cenesdeveloper/Recipe_Finder"
-          live="https://recipy-finder.onrender.com"
-          skills={["Python", "Flask", "SQLite", "Bootstrap"]}
+          title="🌐 Personal Portfolio"
+          desc="Built a personal portfolio using Next.js and Tailwind CSS to showcase my projects, experience, and skills in a responsive layout."
+          github="https://github.com/cenesdeveloper/portfolio"
+          live="https://cemalenesdurakportfolio.vercel.app/"
+          skills={["TypeScript", "Next.js", "Tailwind CSS"]}
+        />
+        
+        <ProjectCard
+          title="📚 Gamified Learning Platform"
+          desc="Designed an interactive web app to enhance student engagement through gamification. Features include educational modules with point-based rewards, leaderboards, achievement badges, and a reward redemption system to make learning more enjoyable and motivating"
+          github="https://github.com/DSC-McMaster-U/Gamified-Learning-Platform"
+          skills={["Python", "Flask", "JavaScript", "HTML", "CSS"]}
         />
 
         <ProjectCard
@@ -39,14 +47,6 @@ export default function Projects() {
           desc="A C program that analyzes password strength based on character types and length to help users build secure passwords"
           github="https://github.com/cenesdeveloper/Password-Strength-Analyzer"
           skills={["C", "Security", "CLI"]}
-        />
-
-        <ProjectCard
-          title="🌐 Personal Portfolio"
-          desc="Built a personal portfolio using Next.js and Tailwind CSS to showcase my projects, experience, and skills in a responsive layout."
-          github="https://github.com/cenesdeveloper/portfolio"
-          live="https://cemalenesdurakportfolio.vercel.app/"
-          skills={["TypeScript", "Next.js", "Tailwind CSS"]}
         />
       </div>
     </section>
