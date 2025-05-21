@@ -36,17 +36,17 @@ export default function Projects() {
         />
 
         <ProjectCard
-          title="🕹️ Maze Solver"
-          desc="Implemented Tremaux, BFS, and Right-hand algorithms to solve mazes and compare pathfinding strategies"
-          github="https://github.com/cenesdeveloper/Maze-Solver"
-          skills={["Java", "OOP", "Algorithms"]}
-        />
-
-        <ProjectCard
           title="🔒 Password Strength Analyzer"
           desc="A C program that analyzes password strength based on character types and length to help users build secure passwords"
           github="https://github.com/cenesdeveloper/Password-Strength-Analyzer"
           skills={["C", "Security", "CLI"]}
+        />
+
+        <ProjectCard
+          title="🕹️ Maze Solver"
+          desc="Implemented Tremaux, BFS, and Right-hand algorithms to solve mazes and compare pathfinding strategies"
+          github="https://github.com/cenesdeveloper/Maze-Solver"
+          skills={["Java", "OOP", "Algorithms"]}
         />
       </div>
     </section>
