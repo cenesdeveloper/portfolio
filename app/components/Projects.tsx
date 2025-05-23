@@ -46,7 +46,7 @@ export default function Projects() {
           title="🕹️ Maze Solver"
           desc="Implemented Tremaux, BFS, and Right-hand algorithms to solve mazes and compare pathfinding strategies"
           github="https://github.com/cenesdeveloper/Maze-Solver"
-          skills={["Java", "OOP", "Algorithms"]}
+          skills={["Java", "OOP", "Algorithms", "Maven"]}
         />
       </div>
     </section>
